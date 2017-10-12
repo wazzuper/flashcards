@@ -1,9 +1,9 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Оригинальное слово</th>
-      <th>Переведенное слово</th>
-      <th>Дата обзора</th>
+      <th>Оригинал</th>
+      <th>Перевод</th>
+      <th>Проверка данных</th>
     </tr>
   </thead>
 
@@ -12,7 +12,7 @@
       <tr>
         <td><%= card.original_text %></td>
         <td><%= card.translated_text %></td>
-        <td><%= card.review_date %></td>
+        <td><%= card.review_date.strftime("%d/%m/%Y") %></td>
       </tr>
     <% end %>
   </tbody>
