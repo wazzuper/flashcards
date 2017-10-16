@@ -9,12 +9,11 @@ class CardsController < ApplicationController
 
   def new
     @card = Card.new
-    @card.review_date = Time.now + (60 * 60 * 72)
+    @card.review_date = Time.now + 3.days
   end
 
   def edit
     @card = Card.find(params[:id])
-    @card.review_date = Time.now + (60 * 60 * 72)
   end
 
   def create
