@@ -1,0 +1,10 @@
+inherit_from: ../.rubocop.yml
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Style/IfUnlessModifier:
+  MaxLineLength: 120
+
+Metrics/ClassLength:
+  Max: 180
