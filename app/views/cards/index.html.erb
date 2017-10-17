@@ -3,7 +3,8 @@
     <tr>
       <th>Оригинал</th>
       <th>Перевод</th>
-      <th>Проверка данных</th>
+      <th>Дата следующей проверки</th>
+      <th>Действия с карточкой</th>
     </tr>
   </thead>
 
@@ -13,6 +14,11 @@
         <td><%= card.original_text %></td>
         <td><%= card.translated_text %></td>
         <td><%= card.review_date.strftime("%d/%m/%Y") %></td>
+        <td>
+          <%= link_to 'Показать карточку', card_path(card) %><br />
+          <%= link_to 'Редактировать карточку', edit_card_path(card) %><br />
+          <%= link_to 'Удалить карточку', card_path(card), method: :delete, data: { confirm: 'Вы уверены?' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>
