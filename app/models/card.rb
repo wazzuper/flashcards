@@ -16,6 +16,6 @@ class Card < ApplicationRecord
   private
 
   def original_and_translated_texts_are_not_the_same
-    errors.add(:translated_text, 'Не может быть таким же как и перевод') if translated_text == original_text
+    errors.add(:translated_text, 'Не может быть таким же как и оригинал') if translated_text == original_text
   end
 end
