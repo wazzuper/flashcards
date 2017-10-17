@@ -1,5 +1,3 @@
-inherit_from: ../.rubocop.yml
-
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 

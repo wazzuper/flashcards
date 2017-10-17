@@ -1,11 +1,10 @@
 <%= form_for @card do |form| %>
-
   <% if @card.errors.any? %>
-    <div id="error_explanation">
-      <h2>
+    <div class="alert alert-danger" role="alert" id="error_explanation">
+      <p>
         <%= pluralize(@card.errors.count, "error") %> prohibited
         this card from being saved:
-      </h2>
+      </p>
       <ul>
         <% @card.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
