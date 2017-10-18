@@ -3,9 +3,11 @@ Style/FrozenStringLiteralComment:
 
 Style/IfUnlessModifier:
   MaxLineLength: 120
+  Enabled: true
 
 Style/WhileUntilModifier:
   MaxLineLength: 120
+  Enabled: true
 
 Metrics/LineLength:
   Max: 120
