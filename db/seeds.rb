@@ -16,7 +16,7 @@ num1 = 4
 num2 = 5
 
 while num1 < table_link.length
-  Card.create(original_text: table_link[num1].text,translated_text: table_link[num2].text, 
+  Card.create(original_text: table_link[num1].text, translated_text: table_link[num2].text,
               review_date: Date.today + 3.days)
   num1 += 3
   num2 += 3
