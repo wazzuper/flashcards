@@ -1,8 +1,5 @@
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
-Style/IfUnlessModifier:
-  MaxLineLength: 120
-
-Metrics/ClassLength:
-  Max: 180
+Metrics/LineLength:
+  Max: 120
